@@ -24,4 +24,16 @@ delete person.favoriteAlbum;
 //console.log(person.adress.street);
 //console.log(person.adress['street']);
 
-console.log(person);
+//console.log(person);
+
+// Exemplo de FOR IN
+for ( key in person ) {
+  //console.log('Chave:', key);
+}
+
+for ( key in person ) {
+  console.log('Valor:', person[key]);
+  //console.log('Valor:', person.key); // Usando dot não funciona
+}
+
+
