@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conferência Trybe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="speaker-form-header">
+    <img src="./images/trybe.png" alt="logotipo da trybe" class="logo-trybe">
+    <h1>Submeter Palestra - TrybeCon 2022</h1>
+    <p><em> Quer palestrar na nossa conferência? Preencha este formulário!</em></p>
+  </header>
+
+  <form action="" method="get" class="speaker-form">
+
+    <!-- Usuário e senha -->
+    <section class="line-content">
+      <section>
+        <h2>Usuário e senha:</h2>
+        <label for="full-name">Nome completo:</label>
+        <input type="text" name="fullName" id="full-name" autocomplete="off">
+      </section>
+  
+      <section>
+        <label for="e-mail">E-mail:</label>
+        <input type="email" name="email" id="e-mail" autocomplete="off">
+      </section>
+  
+      <section>
+        <label for="passw">Senha:</label>
+        <input type="password" name="password" id="passw" autocomplete="off">
+      </section>
+    </section>
+
+    <!-- Tipo de palestra -->
+    <section class="line-content">
+      <h2>Tipo de palestra:</h2>
+      <input type="radio" name="talk-type" id="main" value="main">
+      <label for="main">Palco principal</label>
+
+      <input type="radio" name="talk-type" id="secondary" value="secondary">
+      <label for="secondary">Palco secundário</label>
+
+      <input type="radio" name="talk-type" id="workshop" value="workshop">
+      <label for="workshop">Workshop</label>
+    </section>
+
+    <section class="line-content">
+      <h2>Informações pessoais:</h2>
+
+      <label for="t-shirt">Tamanho da camiseta:</label>
+      <select name="t-shirt-size" id="t-shirt" name="t-shirt">
+        <option value="pp">PP - Extra pequeno</option>
+        <option value="p">P - Pequeno</option>
+        <option value="m"> M - Médio</option>
+        <option value="g">G - Grande</option>
+        <option value="gg">GG - Extra grande</option>
+      </select>
+
+      <label for="color">Cor favorita:</label>
+      <input type="color" name="color" id="color">
+
+      <label for="picture-file">Foto:</label>
+      <input type="file" name="picture" id="picture-file">
+    </section>
+
+    <section class="line-content">
+      <h2>Resumo da palestra:</h2>
+
+      <textarea name="" id="" cols="40" rows="10" maxlength="500" placeholder="Descreva sua palestra em 500 caracteres ou menos" class="form-row "></textarea>
+    </section>
+
+    <section class="line-content">
+      <label for="date">Escolha a data:</label>
+      <input type="date" name="date" id="date">
+    </section>
+
+    <section class="line-content">
+      <h2>Aceite dos termos de conduta:</h2>
+
+      <input type="checkbox" name="disponibilidade" id="disponibilidade" required>
+      <label for="disponibilidade">Concordo com os termos e aceito participar da conferência</label>
+    </section>
+
+    <!-- Botões -->
+    <section>
+      <button type="submit" id="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </section>
+
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+</html>
